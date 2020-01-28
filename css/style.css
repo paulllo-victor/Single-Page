@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Open+Sans&display=swap');
+
+*{	
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.center{
+	max-width:1280px;
+	width: 100%;
+	margin:0 auto;
+}
+/*menu global*/
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #99b2b7;
+}
+.header h1{
+	padding: 12px 50px;
+	color: #f0f2eb;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 2px;
+}
+/*Banner Destaque*/
+.banner{
+	padding: 0 2%;
+	width: 100%;
+	height: 600px;
+	background-image: url("../images/imgBanner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+/*Lista no banner*/
+.container-lista{	
+	box-shadow: 5px 5px #f0f2eb;
+	margin: 60px 30px;
+	float: left;
+	border-radius: 5px;
+	width: 400px;
+	height: 300px;
+	background-color: rgba(203,219,224,0.92);
+}
+.container-lista ul{
+	padding: 40px 60px;
+	list-style-position: inside;
+}
+.container-lista li:first-child{
+	padding-top: 10px;
+}
+.container-lista li{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px 0;
+	color: #000;
+}
+.banner > .center{
+	height: 100%;
+}
+/*Formulario de contato*/
+.form{
+	border-radius: 20px;
+	padding: 20px 35px;
+	width: 500px;
+	height: calc(100% + 60px);
+	top: -30px;
+	position: relative;
+	background-color: #fff;
+	float: right;
+	background-clip: padding-box;
+	border:10px solid rgba(150,150,150,0.7);
+}
+.form h2{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.form span{
+	font-size: 20px;
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.container-single input[type=text]{
+	padding: 20px;
+	width: 100%;
+	font-size: 18px;
+	height: 50px;
+	border-radius: 30px;
+	border:1px solid #ccc;
+	margin-bottom: 20px;
+}
+.submitEnviar{
+	text-align: center;
+}
+.submitEnviar input[type=submit]{
+	cursor: pointer;
+	border-radius: 30px;
+	display: inline-block;
+	padding: 30px 60px;
+	border:0;
+	margin-top: 20px;
+	border-bottom: 6px solid #99b2b7;
+	background-color: #cbdbe0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.submitEnviar input[type=submit]:hover{
+	background-color: #99b2b7;
+	transition: background-color 1s;
+}
+.form input[type=text]:focus, .submitEnviar input[type=submit]:focus{
+	outline: 0;
+}
+/*Container destaque*/
+.container-destaque{
+	background-color: #f0f2eb;
+	text-align: center;
+	width: 100%;
+	padding: 80px 0;
+}
+.container-destaque h2{
+	font-size: 35px;
+}
+.container-destaque p{
+	font-size: 18px;
+	margin-top: 20px;	
+	text-align: justify;
+	width: 90%;
+	display: inline-block;
+}
+/*icone*/
+.arrow{
+	background-image: url("../images/arrow.png");
+	background-size: 100% 100%;
+	width: 64px;
+	height: 64px;
+	top: 120px;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+}
+/*Container colunas*/
+.container-colunas{
+	width: 100%;
+	padding: 100px;
+}
+.container-colunas > .center > h2{
+	text-align: center;
+	margin-bottom: 60px;
+	font-size: 45px;
+}
+.coluna-single{
+	padding: 0 40px;
+	text-align: center;
+	float: left;
+	width: 33.3%;
+}
+.coluna-single h2{
+	margin: 10px 0;
+}
+.coluna-single p {
+	text-align: justify;
+	margin-bottom: 40px;
+}
+/*Rodapé*/
+.footer{
+	border-top: 6px solid #99b2b7;
+	text-align: center;
+	padding: 60px;
+	background-color: rgba(203,219,224,0.92);
+}
+.footer p{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.footer a{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #8ea2ad;
+}
+@media screen and (max-width: 1124px){
+	.header{
+		text-align: center;
+	}
+	.container-lista{
+		width: 45%;
+	}
+	.form{
+		top:10px ;
+		height: auto;
+		width: 45%;
+	}
+	.coluna-single{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 900px){
+	.banner{
+		height: auto;
+		text-align: center;
+	}
+	.container-lista{
+		width: 60%;
+		position: relative;
+		float: none;
+		display: inline-block;
+		height: auto;
+		margin-bottom: 40px;
+	}
+	.form{		
+		margin: 0 auto;
+		float: none;
+		width: 80%;
+	}
+}
